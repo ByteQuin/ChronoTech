@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adivina el personaje</title>
+  <link rel="stylesheet" href="assets/css/personaje.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Adivina el personaje</h1>
+    <p id="hint" class="hint">Cargando pista...</p>
+    
+    <div class="card-container" id="cards">
+      <!-- Tarjetas de personajes generadas dinámicamente -->
+    </div>
+    <!-- Agrega esto dentro del body, justo después del div con id="cards" -->
+<button id="reiniciar" class="restart-button">Siguiente</button>
+
+  </div>
+
+  <!-- Audios -->
+  <audio id="success-sound" src="assets/img/correct.mp3" preload="auto"></audio>
+  <audio id="error-sound" src="assets/img/wrong.mp3" preload="auto"></audio>
+
+  <script src="assets/js/personaje.js"></script>
+</body>
+</html>

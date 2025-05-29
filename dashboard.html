@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Chronotech</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="dash-header">
+    <h1>Bienvenido, <span id="nombreUsuario"></span> a CHRONOTECH</h1>
+    <button id="cerrarSesion">Cerrar sesión</button>
+  </header>
+
+  <!-- NUEVO MENÚ DE NAVEGACIÓN -->
+  <nav class="dash-navbar">
+    <ul class="nav-menu">
+      <li><a href="#">Historia de la Tecnología</a></li>
+      <li><a href="#">Evolución de Dispositivos</a></li>
+      <li><a href="#">Curiosidades Tecnológicas</a></li>
+      <li class="juegos-item">
+        <a href="#">Juegos ⯆</a>
+        <ul class="submenu-juegos">
+          <li><a href="pares.html">Encuentra los pares</a></li>
+          <li><a href="personaje.html">Adivina el personaje</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO OPCIONAL O ESPACIO VACÍO -->
+  <main class="dash-main">
+    <p>Selecciona una opción del menú para comenzar.</p>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="dash-footer">
+    <p><em>"La tecnología es mejor cuando une a las personas."</em> – Matt Mullenweg</p>
+  </footer>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

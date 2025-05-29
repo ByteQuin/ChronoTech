@@ -1,0 +1,131 @@
+/* Reset y fuente principal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  color: #333;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado con degradado personalizado */
+.dash-header {
+  background: #ffffff;
+  color: rgb(100, 229, 67);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeHeader 0.8s ease-in-out forwards;
+}
+
+.dash-header h1 {
+  font-size: 24px;
+}
+
+#cerrarSesion {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #14ed57;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#cerrarSesion:hover {
+  background: #14ed57;
+  color: white;
+}
+
+/* NUEVO MENÚ DE NAVEGACIÓN SUPERIOR */
+.dash-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 0 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: rgb(100, 229, 67);;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #14ed57;
+}
+
+/* SUBMENÚ JUEGOS */
+.submenu-juegos {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  min-width: 220px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.submenu-juegos li {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.submenu-juegos li a {
+  color: #333;
+  font-weight: normal;
+  transition: 0.3s;
+}
+
+.submenu-juegos li a:hover {
+  color: white;
+  background: linear-gradient(to right, #43d8d8, #14ed57);
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* MOSTRAR SUBMENÚ AL HACER HOVER */
+.juegos-item:hover .submenu-juegos {
+  display: flex;
+}
+
+/* CONTENIDO PRINCIPAL OPCIONAL */
+.dash-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-size: 20px;
+  color: #555;
+  min-height: 300px;
+}
